@@ -5,7 +5,7 @@ const port = process.env.PORT || 5555
 app.set('trust proxy', true)
 
 app.get('/', (req, res) => {
-	res.send(req.ip)
+	res.send(req.ip + '\n')
 })
 
 app.get('/json', (req, res) => {
